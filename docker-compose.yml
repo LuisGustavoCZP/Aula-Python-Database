@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: py-postgres-stack
+    image: postgres
+    env_file: .env
+    environment:
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - PGDATA=/data/postgres
+    volumes: 
+      #- ./constructor.sql:/docker-entrypoint-initdb.d/constructor.sql
+      - db:/var/lib/postgresql/data
+    ports:
+      - "${DB_PORT}:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+    
+networks:
+  postgres:
+    driver: bridge
+  mongo:
+    driver: bridge
+  mongo-express:
+    driver: bridge
+volumes:
+  db:
+    driver: local
