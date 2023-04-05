@@ -17,7 +17,7 @@
 </ul>
 
 ## Envirorment Variables
-Create a <code>.env</code> file in root of project with following instructions:
+Create a <code>.env</code> file in root of project with following instructions:<br/>
 Criar o arquivo <code>.env</code> na raiz do projeto com as seguintes instruções:
 <pre>
 DB_HOST="localhost"
