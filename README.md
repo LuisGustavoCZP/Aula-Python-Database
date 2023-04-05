@@ -3,22 +3,24 @@
  
 ## Instalação / Install
 ### Windows
-<ul>
+<ol>
 <li><code>python -m venv venv</code></li>
 <li><code>.\venv\Scripts\activate</code></li>
 <li><code>pip install -r requirements.txt</code></li>
-</ul>
+</ol>
 
 ### Linux
-<ul>
+<ol>
 <li><code>python -m venv venv</code></li>
 <li><code>source venv/bin/activate</code></li>
 <li><code>pip install -r requirements.txt</code></li>
-</ul>
+</ol>
 
 ## Envirorment Variables
-Create a <code>.env</code> file in root of project with following instructions:<br/>
-Criar o arquivo <code>.env</code> na raiz do projeto com as seguintes instruções:
+<ul>
+<li>Create a <code>.env</code> file in root of project with following instructions:</li>
+<li>Criar o arquivo <code>.env</code> na raiz do projeto com as seguintes instruções:</li>
+</ul>
 <pre>
 DB_HOST="localhost"
 DB_PORT=5432
