@@ -17,6 +17,7 @@
 </ul>
 
 ## Envirorment Variables
+Create a <code>.env</code> file in root of project with following instructions:
 <pre>
 DB_HOST="localhost"
 DB_PORT=5432
