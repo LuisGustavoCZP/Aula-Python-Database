@@ -16,5 +16,14 @@
 <li><code>pip install -r requirements.txt</code></li>
 </ul>
 
+## Envirorment Variables
+<pre>
+DB_HOST="localhost"
+DB_PORT=5432
+DB_DATABASE="db_python"
+DB_USER="user"
+DB_PASSWORD="password"
+</pre>
+
 ## Iniciar / Run
 <code>python .</code>
