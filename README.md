@@ -18,6 +18,7 @@
 
 ## Envirorment Variables
 Create a <code>.env</code> file in root of project with following instructions:
+Criar o arquivo <code>.env</code> na raiz do projeto com as seguintes instruções:
 <pre>
 DB_HOST="localhost"
 DB_PORT=5432
